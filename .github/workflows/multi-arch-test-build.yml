@@ -17,13 +17,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - arch: k3
+          - arch: bcm53xx-generic
             target: bcm53xx-generic
             runtime_test: false
-
-          - arch: x86_64
-            target: x86-64
-            runtime_test: true
 
     steps:
       - uses: actions/checkout@v3
